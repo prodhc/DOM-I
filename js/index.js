@@ -38,5 +38,52 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+//Box Selection
+let headerBox = document.querySelector('header')
+
+let firstBox = document.querySelector('.cta:nth-of-type(1)')
+
+let secondBoxTop = document.querySelector('.main-content .top-content')
+//element selction
+let navHeader = headerBox.querySelector('nav a')
+
+let titleFirstBox = firstBox.querySelector('h1')
+let buttonFirstBox = firstBox.querySelector('button')
+let logo = document.getElementById("logo-img")
+
+let titlesSecondBoxTop1 = secondBoxTop.querySelector('h4:nth-of-type(1)')
+let titlesSecondBoxTop2 = secondBoxTop.querySelector('h4:nth-of-type(2)')
+//Adding content to elements
+
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+titleFirstBox.textContent = "DOM Is Awesome"
+buttonFirstBox.textContent = "Get Started"
+
+navHeader.textContent = "Home"
+
+titlesSecondBoxTop1.textContent = "Features"
+titlesSecondBoxTop2.textContent = "About"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let ctaimg = document.getElementById("cta-img");
+ctaimg.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+let middleimg = document.getElementById("middle-img");
+middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
